@@ -26,6 +26,7 @@ pip install -r requirements.txt
 key：sk-6V2exWFBSa2lmuZ7C0D773D1BaEd4fB7A1B6A0A265D550C6
 ```python
 # 代码运行前，需要设置环境变量
+import os
 os.environ['OPENAI_BASE_URL'] = 'https://key.wenwen-ai.com/v1'
 os.environ['OPENAI_API_KEY'] = 'sk-6V2exWFBSa2lmuZ7C0D773D1BaEd4fB7A1B6A0A265D550C6'
 ```
