@@ -3,3 +3,4 @@ jupyter==1.0.0
 tiktoken==0.5.2
 zhipuai==1.0.7
 requests== 2.31.0
+websocket-client==0.58.0
