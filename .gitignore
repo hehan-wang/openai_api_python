@@ -5,7 +5,8 @@ __pycache__/
 .idea
 # C extensions
 *.so
-
+# 忽略所有 keys-.*.txt
+openai/utils/keys-*
 # Distribution / packaging
 .Python
 build/
