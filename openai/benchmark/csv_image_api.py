@@ -46,6 +46,7 @@ def get_image_ratio(url):
 def fetch_and_process(row):
     content = row['content']
     prompt, image_urls = parse_content(content)
+    prompt=prompt.strip()+"特别注意手指的生成细节，避免多余手指”，避免手指交叉混乱，没有畸形。图片宽高比例【2:3】"
     # 处理开始 打印日志
     print(f"处理开始: prompt: {prompt}, image_urls: {image_urls}")
     if not prompt or not image_urls:
