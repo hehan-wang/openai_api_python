@@ -42,11 +42,12 @@ class KlingImageGenerator:
 
         # Start generation
         result = self._start_generation(prompt, model, aspect_ratio, image_count)
+        print("task_result", result)
         task_id = result['data']['task_id']
 
         # Wait for completion
         final_result = self._wait_completion(task_id)
-
+        print("final_result", final_result)
         # Download images
         images = final_result['data']['task_result']['images']
         return self._download_images(images, task_id, save_dir)

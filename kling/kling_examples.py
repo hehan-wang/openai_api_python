@@ -13,10 +13,17 @@ def basic_example():
 
     print("=== Basic Example ===")
     # files = generate_image(
-    #     api_key=api_key,
-    #     prompt="A peaceful mountain lake at sunset",
+    #     api_key='sk-RC2GoclGIAs7309WB76bAd7e0e24407d8a9cA7C837Ab3b38',
+    #     base_url='https://api.bltcy.ai/kling',
+    #     prompt="图片中有两个角色，第一个是虚拟角色（这个角色要求参考输入图片中人物的性别，以及形象特征生成）"
+    #            "。第二个是主控角色，是一名年轻女性（不需要参考输入图片），穿着一件淡黄色短裙。场景：在公园。绿树成荫，"
+    #            "鲜花盛开，阳光洒在小径上。虚拟角色搂着主控角色，表情为满脸宠溺。主控角色站在虚拟角色前面，背对着镜头。"
+    #            "生成画风参考输入图片中的画风。超清画质，超高细节，五官清晰，眼神明亮，身体比例正常，四肢细节展示正常，"
+    #            "画面质量和谐，图片宽高比例【2:3】。",
     #     aspect_ratio="16:9",
-    #     save_dir="./examples/basic"
+    #     save_dir="./examples/basic",
+    #     model='kling-v1.5',
+    #     image='https://hobby-suanfa.hobby666.com/chat_video_generation/image_super_resolution/2025-06-14/afb40bbe7f9a45ceb89ea8f3228939ff/1125x2000_e28f6cdfe3674f93a03528378267d59f.jpg'
     # )
 
 
@@ -25,9 +32,15 @@ def basic_example():
 
     files = generate_image(
         api_key=api_key,
-        prompt="A peaceful mountain lake at sunset",
+        prompt="图片中有两个角色，第一个是虚拟角色（这个角色要求参考输入图片中人物的性别，以及形象特征生成）"
+               "。第二个是主控角色，是一名年轻女性（不需要参考输入图片），穿着一件淡黄色短裙。场景：在公园。绿树成荫，"
+               "鲜花盛开，阳光洒在小径上。虚拟角色搂着主控角色，表情为满脸宠溺。主控角色站在虚拟角色前面，背对着镜头。"
+               "生成画风参考输入图片中的画风。超清画质，超高细节，五官清晰，眼神明亮，身体比例正常，四肢细节展示正常，"
+               "画面质量和谐，图片宽高比例【2:3】。",
         aspect_ratio="16:9",
-        save_dir="./examples/basic"
+        save_dir="./examples/basic",
+        model='kling-v1.5',
+        image='https://hobby-suanfa.hobby666.com/chat_video_generation/image_super_resolution/2025-06-14/afb40bbe7f9a45ceb89ea8f3228939ff/1125x2000_e28f6cdfe3674f93a03528378267d59f.jpg'
     )
     print(f"Generated: {files}")
 
