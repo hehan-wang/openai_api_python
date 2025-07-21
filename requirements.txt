@@ -1,0 +1,4 @@
+openpyxl
+requests
+openai
+pillow 
