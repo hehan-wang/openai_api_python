@@ -19,6 +19,12 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 os.environ['OPENAI_BASE_URL'] = 'https://key.wenwen-ai.com/v1'
 os.environ['OPENAI_API_KEY'] = 'sk-GYYKJ77h2qJ9YfQV46WAHALlqtz1N17Ma3HpyOw1VHKkb0zW'
+
+# os.environ['OPENAI_API_KEY'] = 'sk-GYYKJ77h2qJ9YfQV46WAHALlqtz1N17Ma3HpyOw1VHKkb0zW'
+# os.environ['OPENAI_API_KEY'] = 'sk-GYYKJ77h2qJ9YfQV46WAHALlqtz1N17Ma3HpyOw1VHKkb0zW-8532'
+# os.environ['OPENAI_API_KEY'] = 'sk-GYYKJ77h2qJ9YfQV46WAHALlqtz1N17Ma3HpyOw1VHKkb0zW-8538'
+# os.environ['OPENAI_API_KEY'] = 'sk-GYYKJ77h2qJ9YfQV46WAHALlqtz1N17Ma3HpyOw1VHKkb0zW-8526'
+# os.environ['OPENAI_API_KEY'] = 'sk-GYYKJ77h2qJ9YfQV46WAHALlqtz1N17Ma3HpyOw1VHKkb0zW-8549'
 # os.environ['OPENAI_API_KEY'] = 'sk-GYYKJ77h2qJ9YfQV46WAHALlqtz1N17Ma3HpyOw1VHKkb0zW-8535'
 # os.environ['OPENAI_API_KEY'] = 'sk-GYYKJ77h2qJ9YfQV46WAHALlqtz1N17Ma3HpyOw1VHKkb0zW-8514'
 # os.environ['OPENAI_API_KEY'] = 'sk-GYYKJ77h2qJ9YfQV46WAHALlqtz1N17Ma3HpyOw1VHKkb0zW-8502'
@@ -44,17 +50,34 @@ client = OpenAI()
 #     {"role": "user", "content": "画个猪"}
 # ]
 
+# messages = [
+#     {"role": "user", "content": "hi"}
+# ]
+
 messages = [
     {"role": "user", "content": "日本旅游推荐"}
 ]
+
+# messages=[
+#     {"role": "user", "content": "输出5000字关于美国发展的文章"}
+# ]
+
+
 # # model='gpt-4o-image'
-model='gpt-4o'
+# model='gpt-4o-mini'
+# model='claude-3-7-sonnet-20250219'
+# model='gpt-4o'
+# model='gpt-4o-mini-2024-07-18'
+# model='gemini-2.5-flash'
+# model='claude-sonnet-4-20250514'
+# model='claude-sonnet-4-20250514-thinking'
 # model='gpt-4o-2024-08-06'
 # model='gpt-4.1'
 # model='gpt-4o-2024-11-20'
 # model='gpt-4o-mini-2024-07-18'
-times = 20
-workers = 20
+model='deepseek-r1-32b'
+times = 1
+workers = 1
 
 def run_once(idx):
     try:
